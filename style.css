@@ -1,7 +1,11 @@
-/*@import url('https://fonts.googleapis.com/css?family=Raleway');*/
+@import url('https://fonts.googleapis.com/css?family=Merienda');
 
 body {
   margin: 0;
+  height: 16px;
+  line-height: 1.8em;
+  font-family: 'Merienda', cursive;
+    
 }
 
 article {
@@ -20,15 +24,22 @@ header, main, footer {
 header {
   padding: 2em;
   text-align: center;
+    background-size: cover;
+    background-image: url(img/bg.jpg);
+    background-position: center;
+    color: #fff;
+    text-transform: uppercase;
   /*background-image: url('sciezka');*/
 }
 
 header section {
   margin: 0 auto;
+    width: 640px;
 }
 
 header img {
-
+    width: 150px;
+    border-radius: 100px;
 }
 
 h1 {
