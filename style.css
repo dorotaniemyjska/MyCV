@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Merienda');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700&subset=latin-ext');
 
 
 body {
   margin: 0;
-  font-family: 'Merienda', cursive;
+  font-family: 'Amatic SC', cursive;
   font-size: 16px;
   line-height: 1.8em;
 
