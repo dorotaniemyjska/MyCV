@@ -1,11 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Merienda');
 
+
 body {
   margin: 0;
-  height: 16px;
-  line-height: 1.8em;
   font-family: 'Merienda', cursive;
-    
+  font-size: 16px;
+  line-height: 1.8em;
+
+}
+
+a {
+  color: #1C9C94;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.5;
 }
 
 article {
@@ -24,77 +34,148 @@ header, main, footer {
 header {
   padding: 2em;
   text-align: center;
-    background-size: cover;
-    background-image: url(img/pexels-photo-953214.jpeg);
-    background-position: center;
-    color: #fff;
-    text-transform: uppercase;
-  /*background-image: url('sciezka');*/
+  background-image: url(img/pexels-photo-953214.jpeg);
+  background-size: cover;
+  background-position: fixed;
+  color: white;
 }
 
 header section {
   margin: 0 auto;
-    width: 640px;
+  max-width: 640px;
 }
 
 header img {
-    width: 150px;
-    border-radius: 100px;
+  border-radius: 50%;
+  max-width: 150px;
 }
 
 h1 {
+  text-transform: uppercase;
   margin: 1em 0;
 }
 
-h3
-{
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 20px;
+h3 {
+  text-transform: uppercase;
 }
 
-main section
-{
-    border-bottom: 1px solid;
-}
-
-main section:last-child
-{
-    border-bottom: none;
+h3, h4 {
+  font-weight: bold;
 }
 
 main {
   max-width: 1140px;
 }
 
-.course {
-    display: flex;
-    flex-wrap: wrap;
+main section:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
+
+.fab {
+  border: 1px solid white;
+  border-radius: 50%;
+  font-size: 1.5em;
+  width: 1.5em;
+  height: 1.5em;
+  line-height: 1.5em;
+  margin: 5px;
+  text-align: center;
+}
+
+a .fab {
+  color: white;
+}
+
+.course, .skills {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .course .title {
-    font-weight: 400;
-    color:#509e98;
-    flex: 0 0 33.3%;
-    max-width: 33%;
-    font-size: 14px;
+  color: #5cadbf;
+  -ms-flex: 0 0 33.3%;
+  flex: 0 0 33.3%;
+  max-width: 33%;
 }
 
 .course .descrition {
-    flex: 0 0 66.6%;
-    max-width: 66.6%;
-    font-size: 13px;
+  -ms-flex: 0 0 66.6%;
+  flex: 0 0 66.6%;
+  max-width: 66.6%;
 }
 
-.course .descrition p
+.course .descrition p {
+  padding-left: 1em;
+}
+
+.skills .column {
+  -ms-flex: 0 0 33.3%%;
+  flex: 0 0 33.3%;
+  max-width: 33.3%;
+}
+
+.skills .column ul, ul.job-description {
+  list-style-type: none;
+}
+
+.skills .column ul > li:before {
+  content: "";
+  padding-right: 0.5em;
+  
+}
+.skills .column ul
 {
-    padding-left: 1em;
+    padding: 0;
 }
 
-.school span {
-  color: #A7B8BF;
+.school, .job-title {
+  text-transform: capitalize;
+}
+.school {
+    
+    padding-top:px;
+}
+
+.school span, .job-title span {
+  color: #6e9be5;
+  
+}
+
+ul.job-description li:before{
+  content: "✔";
+  padding-right: 0.5em;
+  color: #509e98;
 }
 
 footer {
- padding: 1em;
+ padding: 0.1em 1.5em;
+ background: #0084a1;
+ color: white;
+ text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .course {
+    display: block;
+  }
+
+  .course .title, .course .descrition {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .skills {
+    display: block;
+  }
+
+  .skills .column {
+    max-width: 100%;
+  }
+
+  footer {
+    text-align: center;
+  }
 }
