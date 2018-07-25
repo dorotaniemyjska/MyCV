@@ -186,6 +186,6 @@ footer a:hover {
   }
 
   footer {
-    justify-content: space-between;
+    text-align: justify;
   }
 }
