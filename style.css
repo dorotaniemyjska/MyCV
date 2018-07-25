@@ -34,7 +34,7 @@ header, main, footer {
 header {
   padding: 2em;
   text-align: center;
-  background-image: url(img/pexels-photo-953214.jpeg);
+  background-image: url(img/backgrounds-blank-blue-953214.jpg);
   background-size: cover;
   background-position: fixed;
   color: white;
@@ -127,7 +127,7 @@ a .fab {
 }
 .skills .column ul
 {
-    padding: 0;
+  padding: 0;
 }
 
 .school, .job-title {
@@ -135,7 +135,7 @@ a .fab {
 }
 .school {
     
-    padding-top:px;
+  padding-top:1.5px;
 }
 
 .school span, .job-title span {
@@ -150,10 +150,20 @@ ul.job-description li:before{
 }
 
 footer {
- padding: 0.1em 1.5em;
- background: #0084a1;
- color: white;
- text-align: center;
+    padding: 0.1em 1.5em;
+    background: #0084a1;
+    display:flex;
+    justify-content:space-between;
+    font-size: 10px;
+    height: 40px;
+    align-items: center;
+}
+
+footer a, p {
+    color: #fff;
+}
+footer a:hover {
+  color:#fff;
 }
 
 @media only screen and (max-width: 768px) {
@@ -176,6 +186,6 @@ footer {
   }
 
   footer {
-    text-align: center;
+    justify-content: space-between;
   }
 }
