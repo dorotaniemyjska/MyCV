@@ -151,11 +151,22 @@ ul.job-description li:before{
 }
 
 footer {
- padding: 1em 1.5em;
- background: #A7B8BF;
- color: white;
- text-align: right;
+    padding: 0.1em 1.5em;
+    background: #0084a1;
+    display:flex;
+    justify-content:space-between;
+    font-size: 10px;
+    height: 40px;
+    align-items: center;
 }
+
+footer a, p {
+    color: #fff;
+}
+footer a:hover {
+  color:#fff;
+}
+
 
 @media only screen and (max-width: 768px) {
   .course {
