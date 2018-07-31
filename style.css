@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&subset=latin-ext');
 
-
 body {
   margin: 0;
   font-family: 'Lora', serif;
   font-size: 16px;
   line-height: 1.8em;
-
 }
 
 a {
@@ -94,7 +92,7 @@ a .fab {
 }
 
 .course .title {
-  color: #5cadbf;
+   color: #5cadbf;
   -ms-flex: 0 0 33.3%;
   flex: 0 0 33.3%;
   max-width: 33%;
@@ -123,8 +121,9 @@ a .fab {
 .skills .column ul > li:before {
   content: "";
   padding-right: 0.5em;
-  
+  color: #509e98;
 }
+
 .skills .column ul
 {
   padding: 0;
@@ -133,14 +132,16 @@ a .fab {
 .school, .job-title {
   text-transform: capitalize;
 }
+
 .school {
     
   padding-top:1.5px;
 }
 
+
 .school span, .job-title span {
-  color: #6e9be5;
-  
+  color: #889499;
+  text-decoration: underline;
 }
 
 ul.job-description li:before{
@@ -150,20 +151,10 @@ ul.job-description li:before{
 }
 
 footer {
-    padding: 0.1em 1.5em;
-    background: #0084a1;
-    display:flex;
-    justify-content:space-between;
-    font-size: 10px;
-    height: 40px;
-    align-items: center;
-}
-
-footer a, p {
-    color: #fff;
-}
-footer a:hover {
-  color:#fff;
+ padding: 1em 1.5em;
+ background: #A7B8BF;
+ color: white;
+ text-align: right;
 }
 
 @media only screen and (max-width: 768px) {
