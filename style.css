@@ -32,7 +32,7 @@ header, main, footer {
 header {
   padding: 2em;
   text-align: center;
-  background-image: url(img/backgrounds-blank-blue-953214.jpg);
+  background-image:url(img/backgrounds-blank-blue-953214.jpg);
   background-size: cover;
   background-position: fixed;
   color: white;
@@ -140,12 +140,12 @@ a .fab {
 
 
 .school span, .job-title span {
-  color: #889499;
+  color: #6e9be5;
   text-decoration: underline;
 }
 
 ul.job-description li:before{
-  content: "✔";
+  content: "";
   padding-right: 0.5em;
   color: #509e98;
 }
