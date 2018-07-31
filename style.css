@@ -153,11 +153,7 @@ ul.job-description li:before{
 footer {
     padding: 0.1em 1.5em;
     background: #0084a1;
-    display:flex;
-    justify-content:space-between;
     font-size: 10px;
-    height: 40px;
-    align-items: center;
 }
 
 footer a, p {
