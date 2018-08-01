@@ -32,7 +32,7 @@ header, main, footer {
 header {
   padding: 2em;
   text-align: center;
-  background-image:url(img/backgrounds-blank-blue-953214.jpg);
+  background-image: url(img/backgrounds-blank-blue-953214.jpg);
   background-size: cover;
   background-position: fixed;
   color: white;
@@ -92,7 +92,7 @@ a .fab {
 }
 
 .course .title {
-   color: #5cadbf;
+  color: #5cadbf;
   -ms-flex: 0 0 33.3%;
   flex: 0 0 33.3%;
   max-width: 33%;
@@ -123,21 +123,17 @@ a .fab {
   padding-right: 0.5em;
   color: #509e98;
 }
-
-.skills .column ul
-{
+.skills .column ul {
   padding: 0;
 }
 
 .school, .job-title {
   text-transform: capitalize;
 }
-
 .school {
-    
-  padding-top:1.5px;
-}
 
+  padding-top: 1.5px;
+}
 
 .school span, .job-title span {
   color: #6e9be5;
@@ -145,24 +141,26 @@ a .fab {
 }
 
 ul.job-description li:before{
-  content: "";
+  content: "✔";
   padding-right: 0.5em;
-  color: #509e98;
+  color: #6e9be5;
 }
 
 footer {
-    padding: 0.1em 1.5em;
-    background: #0084a1;
-    font-size: 10px;
-}
-
-footer a, p {
-    color: #fff;
-}
-footer a:hover {
+padding: 0.1em 1.5em;
+  background-image: linear-gradient(45deg, #035198, #54d1ed, #7fadc5, #026f9d);
+  font-size: 10px;
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  align-items: center;
   color:#fff;
+
 }
 
+footer a {
+  color: #fff;
+}
 
 @media only screen and (max-width: 768px) {
   .course {
